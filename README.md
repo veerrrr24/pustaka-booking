@@ -1,6 +1,6 @@
 Cara cloning data lewat Git:
 1. Buka terminal dengan VSCode / GIT BASH
-2. Pergi ke direktori "C:/xampp/htdocs"
+2. Pergi ke direktori "C:/xampp/htdocs" ( lewati tahap ini apabila sudah menggunakan GIT BASH)
 3. Konfigurasi Git dengan command dibawah:
 git config --global user.name "Username Anda"
 git config --global user.email "Email Anda"
