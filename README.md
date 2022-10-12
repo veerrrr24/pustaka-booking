@@ -16,3 +16,7 @@ git add .
 git commit -m 'Komentar Anda'
 git pull
 git push
+
+Cara Mengetahui apa yang sedang di update pencet dibawah ini
+`Click Here <https://gitlab.com/aghyksa/pustaka/-/commits/main>`_
+[Click here](https://gitlab.com/aghyksa/pustaka/-/commits/main)
