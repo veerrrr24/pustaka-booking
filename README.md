@@ -1,3 +1,5 @@
+# [Click Here](https://gitlab.com/aghyksa/pustaka/-/blob/main/README.md) ini untuk melihat README.MD Lebih bagus
+
 ## Cara cloning data lewat Git:
 - Buka terminal dengan VSCode / GIT BASH
 - Pergi ke direktori "C:/xampp/htdocs" ( lewati tahap ini apabila sudah menggunakan GIT BASH)
