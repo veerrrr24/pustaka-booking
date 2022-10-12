@@ -1,4 +1,4 @@
-# [Click Here](https://gitlab.com/aghyksa/pustaka/-/blob/main/README.md) ini untuk melihat README.MD Lebih bagus
+### [Click Here](https://gitlab.com/aghyksa/pustaka/-/blob/main/README.md) ini untuk melihat README.MD Lebih bagus
 
 ## Cara cloning data lewat Git:
 - Buka terminal dengan VSCode / GIT BASH
