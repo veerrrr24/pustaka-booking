@@ -35,4 +35,4 @@ git push
 
 ## Guidance Informative
 1. Cara Mengetahui apa yang di **update** [pencet ini](https://gitlab.com/aghyksa/pustaka/-/commits/main)
-2.
+2. ini belom ada nih gatau mau ngisi apaan.
