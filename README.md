@@ -6,6 +6,8 @@
 - Konfigurasi Git dengan command dibawah:
 ```
 git config --global user.name "Username Anda"
+```
+```
 git config --global user.email "Email Anda"
 ```
 CATATAN: Konfigurasi ini hanya dilakukan sekali saja, jika sudah dikonfigurasi, lewati tahap yang ini.
@@ -20,8 +22,14 @@ git clone https://gitlab.com/aghyksa/pustaka.git
 - Gunakan urutan command dibawah ini secara **Ber-Urutan**:
 ```
 git add .
+```
+```
 git commit -m 'Komentar Anda'
+```
+```
 git pull
+```
+```
 git push
 ```
 
