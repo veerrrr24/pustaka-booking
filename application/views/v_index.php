@@ -1,50 +1,13 @@
 <section>
-	<h1><?php echo $judul ?></h1>
-	<p align='justify'>Pada pengertian codeigniter di atas
-		tadi di jelaskan bahwa codeigniter menggunakan metode MVC. Apa itu MVC? Kita juga harus mengetahui apa itu MVC
-		sebelum masuk dan lebih
-		jauh dalam belajar codeigniter.</p>
-	<p>MVC adalah teknik atau konsep yang memisahkan
-		komponen utama menjadi tiga komponen yaitu model, view dan
-		controller.</p>
+    <h1><?= $judul ?></h1>
+    <p align="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quibusdam harum voluptatibus est quaerat dolorem obcaecati voluptatum quae exercitationem voluptate, delectus nemo, voluptatem optio sit dignissimos nobis dolorum, corporis ad aut accusamus modi provident. Nulla laboriosam sint nemo. Perferendis ea aut inventore laboriosam quidem ipsa minus architecto ipsam vitae soluta.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa eos vitae maxime optio maiores, dicta ea neque necessitatibus voluptatum quo?</p>
 
-	<ol type="a">
-		<li>Model</li>
-		<p align='justify'>Model adalah kelas yang merepresentasikan atau
-			memodelkan tipe data yang akan digunakan oleh aplikasi. Model juga
-			dapat didefinisakn sebagai bagian penanganan yang berhubungan dengan
-			pengolahan atau manipulasi database. Seperti misalnya mengambil data
-			dari database, menginput dan pengolahan database lainnya. Semua
-			intruksi atau fungsi yang berhubung dengan pengolahan database di
-			letakkan di dalam model. Sebagai contoh, jika ingin membuat aplikasi
-			untuk menghitung luas dan keliling lingkaran, maka dapat memodelkan
-			objek lingkaran sebagai kelas model.</p>
-		<p align='justify'>Sebagai catatan, Semua model harus disimpan di
-			dalam folder application\models</p>
-		<li>View</li>
-		<p align='justify'>View merupakan bagian yang menangani halaman user
-			interface atau halaman yang muncul pada user(pada browser). Tampilan
-			dari user interface di kumpulkan pada view untuk memisahkannya
-			dengan controller dan model sehingga memudahkan web designer dalam
-			melakukan pengembangan tampilan halaman website.</p>
-		<li>Controller</li>
-		<p align='justify'>Controller merupakan kumpulan intruksi aksi yang
-			menghubungkan model dan view, jadi user tidak akan berhubungan
-			dengan model secara langsung, intinya data yang tersimpan di
-			database (model) di ambil oleh controller dan kemudian controller
-			pula yang menampilkan nya ke view. Jadi controller lah yang mengolah
-			intruksi.</p>
-		<p align='justify'>Dari penjelasan tentang model view dan controller
-			di atas dapat di simpulkan bahwa controller sebagai penghubung view
-			dan model. Misalnya pada aplikasi yang menampilkan data dengan
-			menggunakan metode konsep mvc, controller memanggil intruksi pada
-			model yang mengambil data pada database, kemudian controller yang
-			meneruskannya pada view untuk di tampilkan. Jadi jelas sudah dan
-			sangat mudah dalam pengembangan aplikasi dengan cara mvc ini karena
-			web designer atau front-end developer tidak perlu lagi berhubungan
-			dengan controller, dia hanya perlu berhubungan dengan view untuk
-			mendesign tampilann aplikasi, karena back-end developer yang menangani bagian controller dan modelnya. Jadi
-			pembagian tugas pun
-			menjadi mudah dan pengembangan aplikasi dapat di lakukan dengan
-			cepat dan terstruktur.</p>
+    <ol type="a">
+    <li>Model</li>
+    <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam magni optio dolorem eum autem libero expedita eveniet explicabo. Ea expedita dignissimos animi ratione totam deserunt sed, pariatur velit odit aliquam ut asperiores incidunt nam recusandae similique, molestias nihil aperiam id, atque molestiae eaque. Qui nesciunt aperiam asperiores eius nihil ipsam quos dolorum porro, cum tenetur ipsum officiis non velit odio temporibus. Laudantium nobis quas nesciunt dolor! Laborum odit aliquid optio.</p>
+    <p align="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea odio cumque cum consequuntur, ipsum fugiat.</p>
+    <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rem maxime voluptate neque? Cum delectus voluptatem placeat veritatis quas perspiciatis consectetur impedit omnis aut tempore, adipisci, amet laboriosam eligendi ratione atque! Qui similique ipsum cupiditate?</p>
+    <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat incidunt ab facilis cum dolor illum magnam perspiciatis asperiores quibusdam eaque vero assumenda, nihil, suscipit eos quos, deserunt porro expedita aliquid?</p>
+    <p align="justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias sed ipsum modi quaerat vitae eum odit harum perspiciatis commodi, quos dignissimos facilis tempore, deleniti, ab earum pariatur corrupti quis iure similique laboriosam obcaecati esse architecto illum voluptatum? Vero ab nostrum nemo voluptates commodi laborum placeat amet numquam error molestiae, odit, officiis ad quasi animi quibusdam incidunt? Excepturi iusto fuga vel! Quidem dolores neque, quod aut inventore in facilis harum laboriosam.</p>
 </section>

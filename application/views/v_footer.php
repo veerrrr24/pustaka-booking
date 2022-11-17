@@ -1,2 +1,6 @@
-<footer>
-	<a href="http://www.RentalBuku.com">RentalBuku </a> </footer> </div> </body> </html>
+        <footer>
+            <a href="<?= base_url().'index.php/web' ?>">RentalBuku</a>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,11 +1,11 @@
-<?php
-class contoh1 extends CI_Controller
-{
-    public function index()
-    {
-        // echo "<h1>Perkenalkan</h1>";
-        // echo "nama saya Lyon saya tinggal di daerah bumi olahraga yang saya sukai adalah tidur";
-		$this->load->view('welcome_message2');
-
+<?php 
+    class Contoh1 extends CI_Controller {
+        public function index() {
+            echo "<h1>Perkenalan</h1>";
+            echo "Nama saya Ferrian Eka Septiawan
+                  Saya tinggal di daerah Cibubur
+                  olah raga yang saya sukai adalah
+                  Sepakbola";
+        }
     }
-}
+?>
