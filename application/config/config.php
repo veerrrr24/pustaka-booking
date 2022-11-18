@@ -23,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/pustaka-booking/';
+$root = (isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST'];
+$root .= str_replace(basename($_SERVER['SCRIPT_NAME']), '',
+$_SERVER['SCRIPT_NAME']);
+$config['base_url'] = $root;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -136,7 +140,7 @@ $config['subclass_prefix'] = 'MY_';
 | Note: This will NOT disable or override the CodeIgniter-specific
 |	autoloading (application/config/autoload.php)
 */
-$config['composer_autoload'] = "vendor/autoload.php";
+$config['composer_autoload'] = FALSE;
 
 /*
 |--------------------------------------------------------------------------
