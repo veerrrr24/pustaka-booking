@@ -32,7 +32,7 @@ git config --global user.email "Email Anda"
 CATATAN: Konfigurasi ini hanya dilakukan sekal  i saja, jika sudah dikonfigurasi, lewati tahap yang ini.
 - Lalu tarik data dari Git Pustaka dengan command berikut:
 ```
-git clone https://gitlab.com/aghyksa/projectwp2.git
+git clone https://gitlab.com/aghyksa/pustaka.git
 ```
 
 ## Cara push/pull data lewat Git:
