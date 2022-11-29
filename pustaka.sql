@@ -1,28 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 5.2.0
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Nov 18, 2022 at 05:01 PM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.0.19
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Database: `pustaka`
---
-
--- --------------------------------------------------------
-
 --
 -- Table structure for table `booking`
 --
@@ -32,7 +7,7 @@ CREATE TABLE `booking` (
   `tgl_booking` date NOT NULL,
   `batas_ambil` date NOT NULL,
   `id_user` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 -- --------------------------------------------------------
 
@@ -44,7 +19,7 @@ CREATE TABLE `booking_detail` (
   `id` int(11) NOT NULL,
   `id_booking` varchar(12) NOT NULL,
   `id_buku` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 -- --------------------------------------------------------
 
@@ -64,17 +39,19 @@ CREATE TABLE `buku` (
   `dipinjam` int(11) NOT NULL,
   `dibooking` int(11) NOT NULL,
   `image` varchar(256) CHARACTER SET latin1 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
 
 --
 -- Dumping data for table `buku`
 --
 
-INSERT INTO `buku` (`id`, `judul_buku`, `id_kategori`, `pengarang`, `penerbit`, `tahun_terbit`, `isbn`, `stok`, `dipinjam`, `dibooking`, `image`) VALUES
+INSERT INTO `buku` 
+(`id`, `judul_buku`, `id_kategori`, `pengarang`, `penerbit`, `tahun_terbit`, `isbn`, `stok`, `dipinjam`, `dibooking`, `image`) 
+VALUES
 (2, 'Mudah Belajar Komputer untuk Anak', 1, 'Bambang Agus Setiawan', 'Huta Media', 2014, '9786025118500', 5, 3, 1, 'img1557402397.jpg'),
 (3, 'PHP komplet', 1, 'Jubilee', 'Elex Media Komputindo', 2017, '93467535347', 5, 1, 1, 'img1555522493.jpg'),
 (4, 'Detektif Conan Ep 200', 9, 'Okigawa sasuke', 'Cultuar', 2016, '874387583987', 5, 0, 0, 'img1557401465.jpg'),
-(5, 'Bahasa indonesia', 2, 'Umri Nur\'aini dan indriyani', 'Pusat Perbukuan', 2015, '757254724884', 3, 0, 0, 'img1557402703.jpg'),
+(5, 'Bahasa indonesia', 2, 'Umri Nuraini dan indriyani', 'Pusat Perbukuan', 2015, '757254724884', 3, 0, 0, 'img1557402703.jpg'),
 (6, 'Komunikasi Linta Budaya', 5, 'Dr. Dedy Kurnia', 'Published', 2015, '878674646488', 5, 0, 0, 'img1557403156.jpg'),
 (7, 'Kolaborasi Codeigniter dan Ajax Dalam Perancangan', 1, 'Anton Subagia', 'Elex Media komputindo', 2017, '43345356577', 5, 0, 0, 'img 1557403502.jpg'),
 (8, 'From Hobby to Money', 4, 'Deasylawatai', 'Elex Media Komputindo', 2015, '8796868787879', 5, 0, 0, 'img1557403658.jpg'),
@@ -91,7 +68,7 @@ CREATE TABLE `detail_pinjam` (
   `no_pinjam` varchar(12) NOT NULL,
   `id_buku` int(11) NOT NULL,
   `denda` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
 
 --
 -- Dumping data for table `detail_pinjam`
@@ -114,7 +91,7 @@ INSERT INTO `detail_pinjam` (`no_pinjam`, `id_buku`, `denda`) VALUES
 CREATE TABLE `kategori` (
   `id` int(11) NOT NULL,
   `kategori` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
 
 --
 -- Dumping data for table `kategori`
@@ -146,7 +123,7 @@ CREATE TABLE `pinjam` (
   `tgl_pengembalian` date NOT NULL,
   `status` enum('Pinjam','Kembali') NOT NULL DEFAULT 'Pinjam',
   `total_denda` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
 
 -- --------------------------------------------------------
 
@@ -157,7 +134,7 @@ CREATE TABLE `pinjam` (
 CREATE TABLE `role` (
   `id` int(11) NOT NULL,
   `role` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
 
 --
 -- Dumping data for table `role`
@@ -184,7 +161,7 @@ CREATE TABLE `temp` (
   `penulis` varchar(128) NOT NULL,
   `penerbit` varchar(128) NOT NULL,
   `tahun_terbit` year(4) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);
 
 -- --------------------------------------------------------
 
@@ -202,7 +179,7 @@ CREATE TABLE `user` (
   `role_id` int(11) NOT NULL,
   `is_active` int(1) NOT NULL,
   `tanggal_input` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+);
 
 --
 -- Dumping data for table `user`
@@ -214,8 +191,8 @@ INSERT INTO `user` (`id`, `nama`, `email`, `image`, `password`, `alamat`, `role_
 (3, 'Lyon Younes', 'agyp@gmail.com', 'pro1668696380.jpg', '$2y$10$Brpdloo.qN9LgCv1yBg/A.IrdBBcuHV9YaEClge05Llf3ForKoOm6', 0, 1, 1, 1668480545),
 (4, 'wkwk', 'wkwk@gmail.com', 'pro1668763369.jpg', '$2y$10$QC2uUCGvSxwtoMb5iGQ7XutUxUgReAOos.3vXP4JavAvdIxAMydAq', 0, 1, 1, 1668761735),
 (5, 'a', 'a@gmail.com', 'default.jpg', '$2y$10$UL/kwQUOa7RQELCz3dYCwOymE9DPQXy9HGrDa8mXn7ZMjruURgugG', 0, 2, 1, 1668762641),
-(9, 'Admin Pustaka', 'admin.pustaka@gmail.com', 'default.jpg', '$2y$10$U.4M3m0cWNXtxLixKESQ2e6Z.ltKJA8rahnEd4a7M1g3hJKYD35tq', 0, 1, 1, 1637256382),
-(10, 'Member Pustaka', 'member.pustaka@gmail.com', 'default.jpg', '$2y$10$2bp03GCr8Wkzpu5qrERmZOqShpn6kmJ6BHfsGvpqMqnnC4rbLjria', 0, 2, 1, 1637258675);
+(9, 'Admin Pustaka', 'admin@gmail.com', 'default.jpg', '$2y$10$U.4M3m0cWNXtxLixKESQ2e6Z.ltKJA8rahnEd4a7M1g3hJKYD35tq', 0, 1, 1, 1637256382),
+(10, 'Member Pustaka', 'member@gmail.com', 'default.jpg', '$2y$10$2bp03GCr8Wkzpu5qrERmZOqShpn6kmJ6BHfsGvpqMqnnC4rbLjria', 0, 2, 1, 1637258675);
 
 --
 -- Indexes for dumped tables
@@ -296,8 +273,3 @@ ALTER TABLE `temp`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

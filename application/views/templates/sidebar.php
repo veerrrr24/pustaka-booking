@@ -2,11 +2,11 @@
  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="admin">
     <div class="sidebar-brand-icon rotate-n-15">
         <i class="fas fa-book"></i>
     </div>
-    <div class="sidebar-brand-text mx-3">Pustaka Booking</div>
+    <div class="sidebar-brand-text mx-3">Lyon Pustaka</div>
 </a>
 
 <!-- Divider -->
@@ -54,14 +54,12 @@
             </li>
         </li>
     
-    <hr class="sidebar-divider mt-3">
+    <!-- <hr class="sidebar-divider mt-3">
 
     <div class="sidebar-heading">
         Transaksi
     </div>
-        <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link pb-0" href="<?= base_url('pinjam'); ?>">
                     <i class="fa fa-fw fa-shopping-cart"></i>
@@ -74,15 +72,12 @@
             </li>
         </li>
 
-    <!-- Divider -->
     <hr class="sidebar-divider mt-3">
 
     <div class="sidebar-heading">
         Laporan
     </div>
-        <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link pb-0" href="<?= base_url('laporan/laporan_buku'); ?>">
                     <i class="fa fa-fw fa-address-book"></i>
@@ -100,8 +95,7 @@
             </li>
         </li>
 
-    <!-- Divider -->
-    <hr class="sidebar-divider mt-3">
+    <hr class="sidebar-divider mt-3"> -->
 
 <!-- Sidebar Toggler (Sidebar) -->
 <div class="text-center d-none d-md-inline">
