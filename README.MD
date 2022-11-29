@@ -16,6 +16,10 @@ CATATAN: *Konfigurasi ini hanya dilakukan sekali, jika sudah dikonfigurasi, lewa
 ```
 git clone https://gitlab.com/aghyksa/pustaka-booking.git
 ```
+## Login admin:
+
+ - email `admin@gmail.com`
+ - pass `admin`
 
 ## Cara push/pull data lewat Git:
  - Buka terminal dengan VSCode
